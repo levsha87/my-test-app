@@ -1,10 +1,10 @@
 import { React } from 'react';
-import MyPost from './MyPosts/MyPost';
-import profileStyles from './Profile.module.css';
+import MyPost from './MyPosts/MyPosts';
+import s from './Profile.module.css';
 
 const Profile = () => {
   return (
-    <div className={profileStyles.content}>
+    <div>
       <img
         src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIbqmh9o5zM2evuxUUp3RrVhe2JzgfAFMoNw&usqp=CAU'
         alt='nature'
