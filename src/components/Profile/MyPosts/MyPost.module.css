@@ -1,0 +1,10 @@
+.addMessage {
+    display: flex;
+    padding-bottom: 1.1rem;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
