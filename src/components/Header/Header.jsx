@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <img
-            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo5N9H84BlUK8bkFMOdtEP6km4nqGKWcLBZQ&usqp=CAU'
+            src='https://image.freepik.com/free-vector/leaf-logo-template_93835-866.jpg'
             alt='logo'
             />
         </header>

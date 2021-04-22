@@ -1,0 +1,13 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+.dialogsItems {
+    width: 100%;
+    color: white;
+    }
+
+.messages {
+    color: yellow;
+}

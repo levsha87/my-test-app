@@ -1,8 +1,12 @@
 .header {
   grid-area: header;
   background-color: khaki;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
 }
 
 .header img {
-  width: 40px;
+  width: 50px;
+  border-radius: 50%;
 }

@@ -1,0 +1,13 @@
+.addMessage {
+    padding-bottom: 5px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttonAdd {
+    margin: auto 0;
+}

@@ -1,14 +1,12 @@
 import { React } from 'react';
 import MyPost from './MyPosts/MyPosts';
 import s from './Profile.module.css';
+import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile = () => {
   return (
-    <div>
-      <img
-        src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIbqmh9o5zM2evuxUUp3RrVhe2JzgfAFMoNw&usqp=CAU'
-        alt='nature'
-      />
+    <div className={s.main}>
+      <ProfileInfo />
       <MyPost />
     </div>
   );
