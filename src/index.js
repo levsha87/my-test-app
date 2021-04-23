@@ -1,32 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route } from 'react-router';
-import { BrowserRouter } from 'react-router-dom';
-import Dialogs from './components/Dialogs/Dialogs';
-import Header from './components/Header/Header';
-import Navbar from './components/Navbar/Navbar';
-import Profile from './components/Profile/Profile';
 import './index.css';
-import Music from './components/Music/Music';
-import News from './components/News/News';
-import Settings from './components/Settings/Settings';
+import App from './components/App/App';
 
-const App = () => {
-  return (
-    <BrowserRouter>
-      <div className='app-wrapper'>
-        <Header />
-        <Navbar />
-        <div className='app-wrapper_content'>
-          <Route path='/profile' component={Profile} />
-          <Route path='/dialogs' component={Dialogs} />
-          <Route path='/news' component={News} />
-          <Route path='/music' component={Music} />
-          <Route path='/settings' component={Settings} />
-        </div>
-      </div>
-    </BrowserRouter>
-  );
-};
+let dialogsData = [
+  { id: 1, name: 'Andrei' },
+  { id: 2, name: 'Yurii' },
+  { id: 3, name: 'Vadim' },
+  { id: 4, name: 'Marina' },
+  { id: 5, name: 'Denis' },
+  { id: 6, name: 'Grigory' },
+];
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let messageData = [
+  { id: 1, message: 'Hello' },
+  { id: 2, message: 'How are you?' },
+  { id: 3, message: 'I am fine!' },
+  { id: 4, message: 'I am glad to see you' },
+  { id: 5, message: 'Are you ready?' },
+  { id: 6, message: 'Go!!' },
+];
+
+let postData = [
+  { id: 1, message: 'Hi, how are you?', likeNumber: '15' },
+  { id: 1, message: 'Hello, I am fine!', likeNumber: '25' },
+  { id: 1, message: 'Hello, I am good!', likeNumber: '35' },
+];
+
+ReactDOM.render(<App dialogsData={dialogsData} messageData ={messageData} postData={postData} />, document.getElementById('root'));
+
