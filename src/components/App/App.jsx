@@ -1,6 +1,6 @@
 import React from 'react';
-import { Route } from 'react-router';
-import { BrowserRouter } from 'react-router-dom';
+import {Route} from 'react-router';
+import {BrowserRouter} from 'react-router-dom';
 import Dialogs from './../Dialogs/Dialogs';
 import Header from './../Header/Header';
 import Navbar from './../Navbar/Navbar';
@@ -16,8 +16,19 @@ const App = (props) => {
         <Header />
         <Navbar />
         <div className='app-wrapper_content'>
-          <Route path='/profile' render={() => <Profile state={props.state.profilePage} />} />
-          <Route path='/dialogs' render={() => <Dialogs state={props.state.dialogsPage} />} />
+          <Route
+            path='/profile'
+            render={() => (
+              <Profile
+                state={props.state.profilePage}
+                dispatch={props.dispatch}
+              />
+            )}
+          />
+          <Route
+            path='/dialogs'
+            render={() => <Dialogs state={props.state.dialogsPage} />}
+          />
           <Route path='/news' component={News} />
           <Route path='/music' component={Music} />
           <Route path='/settings' component={Settings} />
